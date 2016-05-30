@@ -1,0 +1,80 @@
+body{
+  background-image: url('../images/wall1.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display:block;
+  padding:0 !important;
+  margin:0;
+
+}
+.center {
+  width: 400px;
+  padding: 25px;
+  /*border: 3px solid ;*/
+  margin: 25px;
+  margin: auto;
+  margin-top: -80px;
+
+}
+.btn{
+  border:0px solid transparent;
+}
+.login input{
+
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 2px;
+    border-color: #FFFFFF;
+    color: #000000;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 6px;
+    margin-top: 10px;
+    background-position: center;
+}
+.logo{
+display: block;
+margin : auto;
+}
+#log{
+background-color: #000000;
+border: 0px solid black;
+font-weight: bold;
+color: #FFFFFF;
+background: rgba(0, 0, 0, 0.5);
+padding-bottom: 50px;
+}
+
+.otp input{
+
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 2px;
+    border-color: #FFFFFF;
+    color: #000000;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 6px;
+    margin-top: 10px;
+    background-position: center;
+}
+.form-otp{
+background-color: #000000;
+border: 0px solid black;
+font-weight: bold;
+color: #FFFFFF;
+background: rgba(0, 0, 0, 0.5);
+padding-bottom: 50px;
+}
+.atd{
+  display: block;
+}
+.atd1{
+    margin-top: 200px;
+}
+table{
+    color: white;
+}
