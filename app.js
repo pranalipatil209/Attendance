@@ -30,7 +30,8 @@ angular.module('attendanceApp', ['ui.router','satellizer'])
                     content: {
                         templateUrl: 'pages/attendance.html'
                     }
-                }
+                },
+                controller:'attendanceCtrl'
             })
         })
     .state('Records',{
