@@ -63,7 +63,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     padding: 6px;
-    margin-top: 10px;
+    margin-top:10px;
     background-position: center;
 }
 
@@ -93,13 +93,18 @@ body {
     top: 100px;
 
 }
-
+.send{
+    padding: 13px;
+}
 table {
     color: white;
 }
-/*#txt{*/
-    /*color: white;*/
-    /*font-size: large;*/
-    /*background-color: pink;*/
-    /*padding: 25px;*/
-/*}*/
+.txt{
+    color: white;
+    font-size: large;
+    padding: 25px;
+}
+
+p{
+    color:white;
+}

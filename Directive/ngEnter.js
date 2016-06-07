@@ -1,5 +1,6 @@
 var $scope;
 angular.module('attendanceApp').directive('ngEnter', function () {
+
     return function (scope, element, attrs) {
         element.bind("keydown keypress", function (event) {
             if(event.which === 13) {
@@ -8,7 +9,9 @@ angular.module('attendanceApp').directive('ngEnter', function () {
                 });
                 event.preventDefault();
             }
+
         });
+
     };
 });
 

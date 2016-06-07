@@ -13,17 +13,24 @@
             <div ng-class=" {'active': isActive, 'disabled':isDisabled}">
                 <!--<div class="col-sm-1"></div>-->
                 <div class="col-sm-10">
-                    <input class="form-control input-lg" id="inputlg" ng-model="myText" type="text" ng-enter="chngClass()">
+                    <input class="form-control input-lg" id="inputlg" type="text" ng-model="selected" auto-complete/>
+                    <br><strong><p>{{selected}}</p></strong>
+                </div>
+                <div class="col-sm-1">
+                    <button class="send btn btn-success btn-block" ng-click="chngClass()">send</button>
                 </div>
 
+                <!--<div class="col-sm-10">-->
+                    <!--<div class="txt">{{myText}}</div>-->
+                <!--</div>-->
             </div>
             </div>
             <!--  </center> -->
         </form>
-    </div>
-    <div class="row" id="txt">
-        <ul>
-            <li ng-repeat="data in Datas">{{ data }}</li>
-        </ul>
+
     </div>
 </div>
+<!--<div class="col-md-10" id="test" >-->
+<!--<br><strong><p>{{Data.print}}</p></strong>-->
+<!--</div>-->
+<!--auto-complete-->

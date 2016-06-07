@@ -1,30 +1,30 @@
 angular.module('attendanceApp', ['ui.router','satellizer'])
     .config(function ($stateProvider, $urlRouterProvider, $authProvider) {
 
-    $urlRouterProvider.otherwise('/Login');
+        $urlRouterProvider.otherwise('/Login');
         $stateProvider
-        .state('Login', {
-            url: '/Login',
-            templateUrl:'pages/login.html',
-             views: {
-                 content: {
-                     templateUrl: 'pages/login.html'
-                 }
-                 //controller:'loginCtrl',
-                 //onEnter: function () {
-                 //    console.log('fghfghf');
-                 //}
-             }
-        })
-        .state('OTP', {
-            url: '/OTP',
-            views: {
-                content: {
-                    templateUrl: 'pages/otp.html'
+            .state('Login', {
+                url: '/Login',
+                templateUrl:'pages/login.html',
+                views: {
+                    content: {
+                        templateUrl: 'pages/login.html'
+                    }
+                    //controller:'loginCtrl',
+                    //onEnter: function () {
+                    //    console.log('fghfghf');
+                    //}
                 }
-            }
-        })
-        .state('Attendance', {
+            })
+            .state('OTP', {
+                url: '/OTP',
+                views: {
+                    content: {
+                        templateUrl: 'pages/otp.html'
+                    }
+                }
+            })
+            .state('Attendance', {
                 url: '/Attendance',
                 views: {
                     content: {
@@ -33,7 +33,7 @@ angular.module('attendanceApp', ['ui.router','satellizer'])
                 },
                 controller:'attendanceCtrl'
             })
-        })
+    })
     .state('Records',{
         url:'/Records',
         views:{
