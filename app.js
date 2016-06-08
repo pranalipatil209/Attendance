@@ -1,4 +1,4 @@
-angular.module('attendanceApp', ['ui.router', 'satellizer'])
+angular.module('attendanceApp', ['ui.router', 'satellizer','ui.bootstrap'])
     .config(function($stateProvider, $urlRouterProvider, $authProvider) {
 
         $urlRouterProvider.otherwise('/Login');

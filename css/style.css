@@ -85,11 +85,11 @@ body {
     /*top : 100px;*/
 /*}*/
 
-.disabled{
+.moveUp{
     display: block;
     margin-top: 100px;
-    -webkit-transition: all 0.6s ease-in-out;
-    transition: all 0.6s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     top: 100px;
 
 }
