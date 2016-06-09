@@ -2,8 +2,8 @@ angular.module('attendanceApp').directive('autoManager', function(){
     var options={
         'up_class': 'moveUp'
     };
-    var dict=["apple","boy","cat","pranali","sharz","apolo","ashes","apop"];
-
+    var dict=["apple maple","boy","cat","pranali","sharz","apolo","ashes","apop"];
+    var show = new Set();
     return {
         restrict: 'A',
         scope: {
@@ -24,27 +24,29 @@ angular.module('attendanceApp').directive('autoManager', function(){
                     search_input(input);
                 }
             });
+            //search from array and returns matched values
+            function search_input(str)
+            {
+                console.log(str);
+                //var show = new Set();
+                for(var i=0;i<dict.length;i++){
+                    for(var j=0;j<str.length;j++) {
+                        if (dict[i].toLowerCase().charAt(j) == str.toLowerCase().charAt(j))
+                            show.add(dict[i]);
+                        else
+                            show.delete(dict[i]);
+                    }
+
+                }
+                console.log(show);
+                //$rootScope.listA = show;
+            }
+        },
+        controller:function($rootScope,$scope){
+            $rootScope.data = dict;
         }
     };
-    //search from array and returns match values
-        function search_input(str)
-        {
-            console.log(str);
-            var show = new Set();
-            //angular.forEach(dict,function(value){
-            //   if()
-            //});
-            for(var i=0;i<dict.length;i++){
-                for(var j=0;j<str.length;j++) {
-                    if (dict[i].charAt(j) == str.charAt(j))
-                        show.add(dict[i]);
-                    //else
-                    //    show.clear();
-                }
-                //show.clear();
-            }
-            console.log(show);
-        }
+
     });
 
 

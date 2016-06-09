@@ -78,8 +78,7 @@ body {
 
 .active {
     display: block;
-    position: relative;
-    margin-top: 350px;
+    margin-top: 400px;
 }
 /*.active:hover{*/
     /*top : 100px;*/
@@ -88,8 +87,8 @@ body {
 .moveUp{
     display: block;
     margin-top: 100px;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
     top: 100px;
 
 }
@@ -107,20 +106,6 @@ table {
 
 p{
     color:white;
+    align-content: center;
+    font-size: xx-large;
 }
-/*sharvari*/
-/*.ckeck{*/
-    /*height: 10px;*/
-    /*width: 10px;*/
-    /*background-color: green;*/
-/*}*/
-/*.check:hover {*/
-    /*width:30px;*/
-    /*height:30px;*/
-    /*/!*color:red;*!/*/
-    /*background-color: pink;*/
-/*}*/
-/*.check:enabled {*/
-    /*background: #5CB85C*/
-/*;*/
-/*}*/
