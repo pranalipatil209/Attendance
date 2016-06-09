@@ -31,9 +31,11 @@ angular.module('attendanceApp', ['ui.router', 'satellizer','ui.bootstrap'])
             .state('Records', {
                 url: '/Records',
                 views: {
-                    tableData: {
+                    content: {
                         templateUrl: 'pages/record.html'
                     }
                 }
+
             })
+
     });

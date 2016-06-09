@@ -30,14 +30,18 @@ angular.module('attendanceApp').directive('autoManager', function(){
         function search_input(str)
         {
             console.log(str);
-            var show=[];
+            var show = new Set();
+            //angular.forEach(dict,function(value){
+            //   if()
+            //});
             for(var i=0;i<dict.length;i++){
                 for(var j=0;j<str.length;j++) {
                     if (dict[i].charAt(j) == str.charAt(j))
-                        show.push(dict[i]);
-                    else
-                        show.pop();
+                        show.add(dict[i]);
+                    //else
+                    //    show.clear();
                 }
+                //show.clear();
             }
             console.log(show);
         }
